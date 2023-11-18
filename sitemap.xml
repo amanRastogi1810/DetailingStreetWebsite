@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<urlset xmlns="http://www.google.com/schemas/sitemap/0.84" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+		<url>
+			<loc>http://detailingstreet.com</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>http://detailingstreet.com/index.php</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>http://detailingstreet.com/about.php</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>http://detailingstreet.com/services.php</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>http://detailingstreet.com/ultra-ppf.php</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>http://detailingstreet.com/our-work.php</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>http://detailingstreet.com/franchise.php</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>http://detailingstreet.com/contact.php</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>http://detailingstreet.com/javascript:void(0);</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>http://detailingstreet.com/#</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>http://detailingstreet.com/coating.php</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>http://detailingstreet.com/privacy-policy.php</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>http://detailingstreet.com/terms-and-conditions.php</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+	</urlset>
+

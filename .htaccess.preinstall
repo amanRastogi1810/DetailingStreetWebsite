@@ -1,0 +1,15 @@
+RewriteEngine On
+# RewriteCond %{REQUEST_FILENAME} -s [OR]
+# RewriteCond %{REQUEST_FILENAME} -l [OR]
+# RewriteCond %{REQUEST_FILENAME} -d
+# RewriteRule ^.*$ - [NC,L]
+# RewriteRule ^.*$ index.php [NC,L]
+header always set X-Frame-Options "sameorigin"
+RewriteCond %{HTTP_HOST} ^detailingstreet\.in$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.detailingstreet\.in$
+RewriteRule ^/?$ "https\:\/\/www\.detailingstreet\.com\/" [R=301,L]
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^detailingstreet\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.detailingstreet\.com$
+RewriteRule ^/?$ "https\:\/\/www\.detailingstreet\.com\/" [R=301,L]

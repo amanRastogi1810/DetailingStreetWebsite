@@ -1,0 +1,1 @@
+[31-Oct-2020 08:58:36 UTC] PHP Fatal error:  require_once(): Failed opening required 'dompdf/autoload.inc.php' (include_path='.:/opt/alt/php71/usr/share/pear') in /home/xr8zfkr20pn2/public_html/crm/application/controllers/User.php on line 6
