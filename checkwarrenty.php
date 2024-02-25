@@ -9,12 +9,12 @@
     <div class="container">
         <div class="row text-center intro-title">
             <div class="col-lg-6 col-md-6 col-sm-6 text-left">
-                <h1 class="text-white">Check Warrenty </h1>
+                <h1 class="text-white">Check Warranty </h1>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 text-right">
                 <ul class="page-breadcrumb">
                     <li><a href="#"><i class="fa fa-home"></i> Home</a> <i class="fa fa-angle-double-right"></i></li>
-                    <li><a href="#">Check Warrenty</a> <i class="fa fa-angle-double-right"></i></li>
+                    <li><a href="#">Check Warranty</a> <i class="fa fa-angle-double-right"></i></li>
 
                 </ul>
             </div>
