@@ -4,10 +4,10 @@ if (($phone_no==""))
 {
 echo "Please enter mobile number";  
 } else {
-$servername = "127.0.0.1";
-$username = "root";
-$password = "";
-$dbname = "detailingstreet";
+$servername = "172.31.2.145";
+$username = "mukul_2212";
+$password = "P.&QA!rI+F2~";
+$dbname = "mukul_database";
 
 // Mobile number to search for
 $mobileNumber = "1234567890"; // Example mobile number
