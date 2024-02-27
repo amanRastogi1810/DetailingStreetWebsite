@@ -649,7 +649,7 @@
                                         <li><a href="our-work.php">Our Work </a></li>
                                         <li><a href="franchise.php">Franchise </a></li>
                                         <li><a href="contact.php">Contact Us </a></li>
-                                        <li><a href="checkwarrenty.php">Check Warrenty</a></li>
+                                        <li><a href="checkwarrenty.php">Check Warranty</a></li>
                                     </ul>
                                 </div>
                             </div>
