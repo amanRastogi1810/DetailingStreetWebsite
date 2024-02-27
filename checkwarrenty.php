@@ -36,7 +36,7 @@
                         </div>
                         <div style="width:fit-content">
                             <button id="submit" name="submit" type="button" value="Send" class="button red">
-                                Check Warrenty
+                                Check Warranty
                             </button>
                         </div>
                     </div>
