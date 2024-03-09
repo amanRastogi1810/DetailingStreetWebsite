@@ -4,10 +4,10 @@ if (($phone_no==""))
 {
 echo "Please enter mobile number";  
 } else {
-$servername = "172.31.2.145";
-$username = "mukul_2212";
-$password = "P.&QA!rI+F2~";
-$dbname = "mukul_database";
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "detailingstreet";
 
 // Mobile number to search for
 $mobileNumber = "1234567890"; // Example mobile number
@@ -45,10 +45,98 @@ try {
             $vehicle = $item['vehicle'];
             $package = $item['package'];
 
+            $purchased_date = $item['date'];
+            // $currentDate = date('Y/m/d');
+            $currentDate = new DateTime();
+            $status = '';
+            if ($package == 'Silver') {
+                $givenDateTime = new DateTime($date);
+                $interval = $givenDateTime->diff($currentDate);
+                $years = $interval->y;
+            
+                if ($years > 0) {
+                    $status = 'InActive';
+                } else {
+                    $status = 'Active';
+                }
+            } else if ($package == 'Gold') {
+                $givenDateTime = new DateTime($date);
+                $interval = $givenDateTime->diff($currentDate);
+                $years = $interval->y;
+            
+                if ($years > 3) {
+                    $status = 'InActive';
+                } else {
+                    $status = 'Active';
+                }
+            } else if ($package == 'Platinum') {
+                $givenDateTime = new DateTime($date);
+                $interval = $givenDateTime->diff($currentDate);
+                $years = $interval->y;
+            
+                if ($years > 5) {
+                    $status = 'InActive';
+                } else {
+                    $status = 'Active';
+                }
+            } else if ($package == 'Platinum Plus') {
+                $givenDateTime = new DateTime($date);
+                $interval = $givenDateTime->diff($currentDate);
+                $years = $interval->y;
+            
+                if ($years > 10) {
+                    $status = 'InActive';
+                } else {
+                    $status = 'Active';
+                }
+            } else if ($package == 'PPF (5 years)') {
+                $givenDateTime = new DateTime($date);
+                $interval = $givenDateTime->diff($currentDate);
+                $years = $interval->y;
+            
+                if ($years > 5) {
+                    $status = 'InActive';
+                } else {
+                    $status = 'Active';
+                }
+            } else if ($package == 'PPF (10 years)') {
+                $givenDateTime = new DateTime($date);
+                $interval = $givenDateTime->diff($currentDate);
+                $years = $interval->y;
+            
+                if ($years > 10) {
+                    $status = 'InActive';
+                } else {
+                    $status = 'Active';
+                }
+            } else if ($package == 'Graphene (5 years)') {
+                $givenDateTime = new DateTime($date);
+                $interval = $givenDateTime->diff($currentDate);
+                $years = $interval->y;
+            
+                if ($years > 5) {
+                    $status = 'InActive';
+                } else {
+                    $status = 'Active';
+                }
+            } else if ($package == 'Graphene (10 years)') {
+                $givenDateTime = new DateTime($date);
+                $interval = $givenDateTime->diff($currentDate);
+                $years = $interval->y;
+            
+                if ($years > 10) {
+                    $status = 'InActive';
+                } else {
+                    $status = 'Active';
+                }
+            }
+
+
             $html_content = $html_content."<td style='text-align:center;border-top:1px solid #000;'> $date </td>";
             $html_content = $html_content."<td style='text-align:center;border-top:1px solid #000;'>$vehicle_name</td>";
             $html_content = $html_content."<td style='text-align:center;border-top:1px solid #000;'> $vehicle</td>";
             $html_content = $html_content."<td style='text-align:center;border-top:1px solid #000;'> $package</td>";
+            $html_content = $html_content."<td style='text-align:center;border-top:1px solid #000;'> $status</td>";
         
             $html_content = $html_content.'</tr>';
         }
@@ -61,6 +149,7 @@ try {
                             <th style="color:white">Vehicle Name</th>
                             <th style="color:white">Vehicle Number</th>
                             <th style="color:white">Package</th>
+                            <th style="color:white">Status</th>
                         </tr>
                     </thead>
                     <tbody id="tbody">
@@ -71,7 +160,7 @@ try {
                 </table>
         ';
     } else {
-        echo "No user found with mobile number $mobileNumber";
+        echo "No user found with mobile number $phone_no";
     }
 } catch(PDOException $e) {
     echo "Error: " . $e->getMessage();
