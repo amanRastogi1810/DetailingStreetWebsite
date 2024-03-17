@@ -54,7 +54,7 @@ try {
                     CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
                     CURLOPT_CUSTOMREQUEST => "POST",
                     CURLOPT_POSTFIELDS => "",
-                    CURLOPT_SSL_VERIFYHOST => 0,
+                    CURLOPT_SSL_VERIFYHOST => 1,
                     CURLOPT_SSL_VERIFYPEER => 0,
                 ));
 
@@ -62,8 +62,7 @@ try {
                 $err = curl_error($curl);
 
                 curl_close($curl);
-        // echo "Otp sent to user";
-        echo $response;
+        echo "Otp sent to user";
     } else {
         echo "No user found with mobile number $phone_no";
     }
