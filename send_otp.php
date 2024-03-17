@@ -63,7 +63,7 @@ try {
 
                 curl_close($curl);
         echo "Otp sent to user";
-        echo $err;
+        echo $response;
     } else {
         echo "No user found with mobile number $phone_no";
     }
