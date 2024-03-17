@@ -8,7 +8,10 @@ echo "Please enter mobile number";
     $username = "mukul_2212";
     $password = "P.&QA!rI+F2~";
     $dbname = "mukul_database";
-
+    // $servername = "127.0.0.1";
+    // $username = "root";
+    // $password = "";
+    // $dbname = "detailingstreet";
 // Mobile number to search for
 $mobileNumber = "1234567890"; // Example mobile number
 
@@ -60,6 +63,7 @@ try {
 
                 curl_close($curl);
         echo "Otp sent to user";
+        echo $err;
     } else {
         echo "No user found with mobile number $phone_no";
     }
