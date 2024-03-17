@@ -40,25 +40,25 @@ try {
         $stmt->bindParam(':mobile_otp_time', $currentDate);
         
         $stmt->execute();
-        // $curl = curl_init();
+        $curl = curl_init();
 
-        //         curl_setopt_array($curl, array(
-        //             CURLOPT_URL => "http://api.msg91.com/api/sendhttp.php?sender=DTSTRT&route=4&mobiles=$phone_no&authkey=213786A8EZYX2C5aec1fbe&country=91&message=Your Otp is $random_number&DLT_TE_ID=1307161717199222102",
-        //             CURLOPT_RETURNTRANSFER => true,
-        //             CURLOPT_ENCODING => "",
-        //             CURLOPT_MAXREDIRS => 10,
-        //             CURLOPT_TIMEOUT => 30,
-        //             CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-        //             CURLOPT_CUSTOMREQUEST => "POST",
-        //             CURLOPT_POSTFIELDS => "",
-        //             CURLOPT_SSL_VERIFYHOST => 0,
-        //             CURLOPT_SSL_VERIFYPEER => 0,
-        //         ));
+                curl_setopt_array($curl, array(
+                    CURLOPT_URL => "http://api.msg91.com/api/sendhttp.php?sender=DTSTRT&route=4&mobiles=$phone_no&authkey=213786A8EZYX2C5aec1fbe&country=91&message=Your Detailing Street warranty check OTP is $random_number&DLT_TE_ID=1307165416338648146",
+                    CURLOPT_RETURNTRANSFER => true,
+                    CURLOPT_ENCODING => "",
+                    CURLOPT_MAXREDIRS => 10,
+                    CURLOPT_TIMEOUT => 30,
+                    CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                    CURLOPT_CUSTOMREQUEST => "POST",
+                    CURLOPT_POSTFIELDS => "",
+                    CURLOPT_SSL_VERIFYHOST => 0,
+                    CURLOPT_SSL_VERIFYPEER => 0,
+                ));
 
-        //         $response = curl_exec($curl);
-        //         $err = curl_error($curl);
+                $response = curl_exec($curl);
+                $err = curl_error($curl);
 
-        //         curl_close($curl);
+                curl_close($curl);
         echo "Otp sent to user";
     } else {
         echo "No user found with mobile number $phone_no";
